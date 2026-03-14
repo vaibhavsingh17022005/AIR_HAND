@@ -1,0 +1,32 @@
+These are the steps you need to follow for setting up the Virtual Environment for your bot.
+1. Install Python 3.12.8 (most stable version)
+
+2. Install VS Code and then Install Python Extensions from Microsoft in VS Code
+
+3. Create New Folder in separate drive (recommended), otherwise in Documents Folder
+Eg. D:\AirHand  or  C:\Users\VAIBHAV SINGH\Documents\AirHand
+Open this folder in VS Code
+
+4. Run Powershell as admin, and write this command:
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser (press enter)
+Y (press enter)
+
+5. Create Virtual Environment in VS Code:
+Go to Terminal (Top-Left Ribbon or 3-dots) --> New Terminal, and write this command:
+python -m venv hand_env (press enter and wait for it to complete)
+
+6. Activate Environment:
+In the same terminal write: hand_env\Scripts\activate (press enter and wait)
+You should see: (hand_env) PS D:\AirHand or (hand_env) PS C:\Users\VAIBHAV SINGH\Documents\AirHand
+
+7. Install Required Libraries:
+Write these commands press enter and wait, it will take few minutes depending upon your download speed
+pip install opencv-python (press enter and wait)
+pip install mediapipe==0.10.14 (press enter and wait)
+pip install pyserial (press enter and wait)
+
+8. Connect VS Code to Virtual Environment:
+press: Ctrl+Shift+P
+Select: Python:Select Interpreter (press enter) --> Select: .\hand_env\Scripts\python.exe
+
+9. Install Arduino IDE, and wait for it to configure itself.
